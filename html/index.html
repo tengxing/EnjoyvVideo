@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>search</title>
+	<!-- <meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/search-control.js"></script>
+</head>
+<body>
+<div class="front" style="display: none;">
+	<div class="clearfix navbar">
+		<div class="search">
+			<input type="text" name="search_movie" placeholder="search">
+			<button id="page_change"></button>
+		</div>
+	</div>
+</div>
+<div class="container" style="display: block;">
+	<header class="clearfix navbar">
+		<div class="search">
+			<button></button>
+			<input type="text" id="search" name="search_movie" placeholder="search">
+		</div>
+	</header>
+	<ul id="search_content"></ul>
+	<div class="content" id="content">
+		<!--视频列表区域-->
+		<div class="video_list">
+			<!--单击事件后台跳转视频播放页-->
+			<div class="video_box" onclick="window.location.href='video.html'">
+				<div class="video_right">
+					<ul>
+						<li class="video_title">PR实现单人枪战短片</li>
+						<li>作者:<span>Author</span></li>
+						<li>浏览:<span>50</span></li>
+					</ul>
+				</div>
+				<div class="pic">
+					<img src="images/2017-9-26132240-947.jpg">
+				</div>
+			</div>
+			<div class="video_box" onclick="window.location.href='video.html'">
+				<div class="video_right">
+					<ul>
+						<li class="video_title">PR实现单人枪战短片</li>
+						<li>作者:&nbsp;<span>Author</span></li>
+						<li>浏览:&nbsp;<span>50</span></li>
+					</ul>
+				</div>
+				<div class="pic">
+					<img src="images/2017-9-26132240-947.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
