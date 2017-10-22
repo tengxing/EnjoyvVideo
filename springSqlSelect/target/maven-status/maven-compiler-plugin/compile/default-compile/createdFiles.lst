@@ -1,4 +1,5 @@
-com/mapper/query.class
-com/domain/movies.class
 com/controller/controller.class
+com/domain/t_url.class
+com/mapper/query.class
 com/Service/test.class
+com/domain/t_org.class

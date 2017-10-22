@@ -8,9 +8,9 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/test"/>
-                <property name="username" value="root"/>
-                <property name="password" value="root"/>
+                <property name="url" value="jdbc:mysql://140.143.93.39:3306/ejvideo"/>
+                <property name="username" value="video"/>
+                <property name="password" value="video123"/>
             </dataSource>
         </environment>
     </environments>

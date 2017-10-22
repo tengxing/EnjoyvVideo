@@ -1,7 +1,7 @@
 package com.mapper;
 
-import com.domain.movies;
+import com.domain.t_org;
 
 public interface query {
-    public movies queryInfo(String  name) throws Exception;
+    public t_org queryInfo(String  name) throws Exception;
 }

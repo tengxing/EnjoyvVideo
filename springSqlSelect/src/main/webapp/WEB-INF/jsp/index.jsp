@@ -12,6 +12,6 @@
     <title>$Title$</title>
 </head>
 <body>
-${movies.id}
+${t_org.content}
 </body>
 </html>

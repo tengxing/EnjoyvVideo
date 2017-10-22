@@ -1,6 +1,6 @@
 package com.Service;
 
-import com.domain.movies;
+import com.domain.t_org;
 import com.mapper.query;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -16,11 +16,11 @@ public class test {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
     }
-    public movies doIt(String name) throws  Exception{
+    public t_org doIt(String name) throws  Exception{
        SetUp();
         SqlSession sqlSession = sqlSessionFactory.openSession();
         query query = sqlSession.getMapper(com.mapper.query.class);
-       movies movies = query.queryInfo(name);
-       return movies;
+       t_org t_org = query.queryInfo(name);
+       return t_org;
     }
 }
