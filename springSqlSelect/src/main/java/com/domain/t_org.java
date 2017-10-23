@@ -9,7 +9,7 @@ public class t_org {
     private String title;
     private String imageUrl ;
     private String publishTime ;
-    private String  videoType ;
+    private String videoType ;
     private String updateTime;
     private String majorActor ;
     private String  status    ;

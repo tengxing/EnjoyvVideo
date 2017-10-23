@@ -5,8 +5,7 @@
 <mapper namespace="com.mapper.query">
     <resultMap id="queryT_urlAndT_org" type="com.domain.t_org">
         <id column="id" property="id" />
-        <association property="t_url" select="queryT_url" >
-            <id column="org_id" property="id"/>
+        <association property="t_url" select="queryT_url" column="id" javaType="com.domain.t_url">
         </association>
     </resultMap>
 
@@ -16,4 +15,5 @@
     <select id="queryT_url" resultType="com.domain.t_url">
         select * from t_url;
     </select>
+
 </mapper>
