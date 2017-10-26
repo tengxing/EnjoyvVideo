@@ -1,0 +1,6 @@
+com/controller/controller.class
+com/domain/t_url.class
+com/mapper/query.class
+com/Service/test.class
+com/Service/testApplication.class
+com/domain/t_org.class

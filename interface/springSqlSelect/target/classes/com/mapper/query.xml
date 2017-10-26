@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.query">
+
+    <resultMap id="queryT_urlAndT_org" type="com.domain.t_org">
+        <id column="id" property="id"/>
+       <collection property="t_url" select="queryT_url" column="id" ofType="com.domain.t_url">
+            <id column="id" property="id" />
+            <result column="org_id" property="org_id"/>
+       </collection>
+    </resultMap>
+
+    <select id="queryInfo" resultMap="queryT_urlAndT_org" parameterType="String">
+        select * from t_org where title LIKE "%"#{value,jdbcType=VARCHAR}"%";
+    </select>
+    <select id="queryT_url" resultType="com.domain.t_url" parameterType="String">
+        select * from t_url WHERE  org_id = #{id};
+    </select>
+
+</mapper>
